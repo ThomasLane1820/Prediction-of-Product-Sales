@@ -32,5 +32,6 @@
 - Visualizing the correlation found between "Item_MRP" and "Item_Outlet_Sales" appears to show that the higher the price of an item the higher the item's potential sales.
 - We might be able to leverage this by adding more high quality, high price items to our stock.
 
-(![(https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/615a8150-e4ac-4730-8e0b-e36e64e5e29c)
+![Screenshot 2023-09-07 222722](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/336a7666-eb6a-48c5-843b-f3e5cbc7252b)
+
 

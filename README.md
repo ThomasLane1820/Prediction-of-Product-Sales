@@ -1,4 +1,5 @@
 # Prediction-of-Product-Sales
+Author: Thomas Lane
 
 ## Project Overview
 
@@ -31,7 +32,17 @@
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/e9b8c45d-c840-482d-9641-cf4aa44f552d)
 - Visualizing the correlation found between "Item_MRP" and "Item_Outlet_Sales" appears to show that the higher the price of an item the higher the item's potential sales.
 - We might be able to leverage this by adding more high quality, high price items to our stock.
-
+  
+## Evaluation Results
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/336a7666-eb6a-48c5-843b-f3e5cbc7252b)
-
-
+- After creating multiple models, the model with the highest R^2 was the Optimized Random Tree Model.
+- This model also had the lowest MAE and RMSE, making it the model with the least error.
+- Now the model is still off by about 40% so there is still plenty of room for improvement.
+  
+## Next Steps
+- While I have cleaned and optimized a model far beyond default hyperparameters ther is still much that can be done.
+  -  There is still further data cleaning opportunities such as:
+      - Editing the Item_Identifier Collumn to remove the numbers.
+      - Creating a third Item_Fat_Content option for non-consumable items.
+  - There are more advanced models I can use to predict sales with.
+  - Making the notebook neater as a whole.

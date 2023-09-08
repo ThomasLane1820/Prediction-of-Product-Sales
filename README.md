@@ -4,7 +4,10 @@
 
 - The overarching goal of this project is to accurately predict product sales and ultimately increase revenue for a potential stakeholder.
 -  The first step was to clean the dirty data set.
--  Next we had to visualize and display some important data to more accurately analyze the information.
+-  Next I had to visualize and display all relevant information about each feature.
+-  I then had to clean the data for the purposes of implementing machine learning.
+-  Using and optimizing various regression models to make product sales with the lowest error.
+
   
 
 ## Data visualization
@@ -28,3 +31,6 @@
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/e9b8c45d-c840-482d-9641-cf4aa44f552d)
 - Visualizing the correlation found between "Item_MRP" and "Item_Outlet_Sales" appears to show that the higher the price of an item the higher the item's potential sales.
 - We might be able to leverage this by adding more high quality, high price items to our stock.
+
+(![(https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/615a8150-e4ac-4730-8e0b-e36e64e5e29c)
+

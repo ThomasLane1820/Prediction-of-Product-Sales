@@ -32,6 +32,23 @@ Author: Thomas Lane
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/e9b8c45d-c840-482d-9641-cf4aa44f552d)
 - Visualizing the correlation found between "Item_MRP" and "Item_Outlet_Sales" appears to show that the higher the price of an item the higher the item's potential sales.
 - We might be able to leverage this by adding more high quality, high price items to our stock.
+
+### Analyzing Coefficients and importaant features
+![Scuffed_coefficients](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/108cd507-0d65-4fb5-bd1b-698ec17e0254)
+- Although the data isn't quite calibrated properly, the three most impactful features are:
+  - Outlet_Identifier_OUT013
+  - Outlet_Type_Supermarket Type 1
+  - Outlet_Location_Type_Tier 3
+ 
+![Important_Features](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/fd70117a-9691-4f13-a625-e90026162f42)
+- The five most important features are:
+  - Item_MRP
+  - Item_Visibility
+  - Outlet_Type_Supermarket Type 1
+  - Outlet_Type_Supermarket Type3
+  - Item_weight
+- It is clear and understandable that the top 4 most important features are Item cost, Item visibility, and the outlet type.
+- I believe the most important piece of information here is related to the outlet sizes that perform best.
   
 ## Evaluation Results
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/336a7666-eb6a-48c5-843b-f3e5cbc7252b)

@@ -1,4 +1,4 @@
-# Prediction-of-Product-Sales
+# Prediction of Product Sales
 Author: Thomas Lane
 
 ## Project Overview
@@ -13,27 +13,59 @@ Author: Thomas Lane
 
 ## Data visualization
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/f5a2c2f9-36f1-4405-b1e4-e5dea92ddd81)
-- This histogram shows that there are over 1,500 items that generate less than $500 in sales.
-- We can potentially take a closer look into these items to see why that may be the case.
+- The histogram shows that there are over 1,500 items that generate less than $500 in sales.
+- We can take a closer look into these items to see if there's anything we can do to improve sales.
+  - We could improve Item_Visibility to improve sales.
+      - If visibility isn't an issue the item's location in the store could be another potential symptom of low sales.
+  - Look into which stores sell the the poorly performing items, and compare the item's sales to the overall performance of the indivicual store.
+      - Doing this could put more accountability onto the store itself rather than the item.
+  
 
 
-
+![Screenshot 2024-01-17 141600](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/f7f97b87-e1bc-4141-be31-4cc0674c49b5)
+- Based off the boxplot seafood and starchy foods are the two most consistent sellers.
+  - Seafood has the highest median value and ties starchy foods for highest 75th percentile.
+  - Starchy foods have the highest minimum value, and are tied for highest 75th percentile.
+- taking a closer look into "others", "baking foods", and "soft drinks" item types could prove worthwhile.
 
 
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/d51e6016-8d6e-4d65-843f-00cba7bb85c7)
 - Knowing how well seafood performs overall, we might want to look into upping the seafood inventory at certain locations.
-- I would also reccommend upping the Starchy food inventory due to it's consistentcy.
+- Increasing starchy foods stock in sotres could improve sales .
 - The top three item groups are all performing very well.
 
 
 
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/1a1b0f20-56e0-470b-a53a-147ef23c55d9)
+- There are only two strong correlations.
+  - Outlet_Establishment_Year and Item_Weight are correlated oddly enough. Not too relevant but maybe worth looking into.
+  - The important correlation is Item_MRP and Item_Outlet_Sales.
+    - While higher priced goods bringing in more sales seems fairly intuitive, it's worth looking into if there's any diminishing returns in higher prices.
+        - If so, at what point do very expensive items bring in less overall sales.
+        - What category items are experiencing diminishing returns sooner or later.
+        - How effective would slightly increasing the cost of lower priced items be.
+
 
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/e9b8c45d-c840-482d-9641-cf4aa44f552d)
-- Visualizing the correlation found between "Item_MRP" and "Item_Outlet_Sales" appears to show that the higher the price of an item the higher the item's potential sales.
-- We might be able to leverage this by adding more high quality, high price items to our stock.
 
-### Analyzing Coefficients and importaant features
+- While total sales steadilty increase as the price of the item increases there doesn't appear to be a clear sweetspot for item cost.
+- Not much to take away from this plot unfortunately. 
+
+![Screenshot 2024-01-17 143557](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/ee0518a8-185d-44d4-8d3a-5cfd1ee8e2e9) 
+- Medium sized stores are performing the best.
+- Large stores aren't poerforming that much better than small stores, could be worht investing in more medium sized outlets rather than larger outlets.
+- While there is a significant amount of missing outlet sizes, they are performing as well as small stores on average.
+
+
+![Screenshot 2024-01-17 143923](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/04905331-1b73-43e8-a645-87bcce60fc5c)
+- The higher the visibility of an item the lower the sales on average.
+- This finding is very counter intuitive.
+  - Could be a quirk with the data as there is a hard wall just before the .2 visibility where sales take a steep dive.
+
+
+
+
+### Analyzing Coefficients and important features 
 ![Scuffed_coefficients](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/108cd507-0d65-4fb5-bd1b-698ec17e0254)
 - Although the data isn't quite calibrated properly, the three most impactful features are:
   - Outlet_Identifier_OUT013
@@ -54,12 +86,11 @@ Author: Thomas Lane
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/336a7666-eb6a-48c5-843b-f3e5cbc7252b)
 - After creating multiple models, the model with the highest R^2 was the Optimized Random Tree Model.
 - This model also had the lowest MAE and RMSE, making it the model with the least error.
-- Now the model is still off by about 40% so there is still plenty of room for improvement.
+- The model is still off by about 40% so there is still plenty of room for improvement.
   
 ## Next Steps
-- While I have cleaned and optimized a model far beyond default hyperparameters ther is still much that can be done.
-  -  There is still further data cleaning opportunities such as:
-      - Editing the Item_Identifier Collumn to remove the numbers.
-      - Creating a third Item_Fat_Content option for non-consumable items.
+- While I have cleaned and optimized a model far beyond default hyperparameters there is still much that can be done.
   - There are more advanced models I can use to predict sales with.
-  - Making the notebook neater as a whole.
+  - Additional analysis.
+  - Making adjustments to make the notebook more readable, adding additonal explanations.
+  - Attempting to address the missing Outlet_Location_Type values.

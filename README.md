@@ -65,12 +65,8 @@ Author: Thomas Lane
 
 
 
-### Analyzing Coefficients and important features 
-![Scuffed_coefficients](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/108cd507-0d65-4fb5-bd1b-698ec17e0254)
-- Although the data isn't quite calibrated properly, the three most impactful features are:
-  - Outlet_Identifier_OUT013
-  - Outlet_Type_Supermarket Type 1
-  - Outlet_Location_Type_Tier 3
+### Analyzing Important Features
+
  
 ![Important_Features](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/fd70117a-9691-4f13-a625-e90026162f42)
 - The five most important features are:
@@ -81,12 +77,25 @@ Author: Thomas Lane
   - Item_weight
 - It is clear and understandable that the top 4 most important features are Item cost, Item visibility, and the outlet type.
 - I believe the most important piece of information here is related to the outlet sizes that perform best.
+
+![Outlet_Type vs Sales](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/f0a24d71-bb90-4575-9090-7f6a0337c2ef)
+
+
+- It isn't surprising that grocery stores have the lowest sales, but it doesn't show crucial information.
+  - Relative total sales based on the number of items offered.
+      - This could show how well grocery stores are selling the items offered, and vice versa.
+      - If supermarket type 3 stores are the largest, and offer the most items, then obviously they should be selling the most, but how efficient is the total process.
+  - Having location information could help in deciding which store type to place in any given location.
+- Type 1 supermarkets are by far the most common with there being 5,500 stores, grocery stores are the second most common with roughly 1,200 stores of this type. 
+
   
 ## Evaluation Results
 ![image](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/336a7666-eb6a-48c5-843b-f3e5cbc7252b)
-- After creating multiple models, the model with the highest R^2 was the Optimized Random Tree Model.
-- This model also had the lowest MAE and RMSE, making it the model with the least error.
-- The model is still off by about 40% so there is still plenty of room for improvement.
+
+- The optimized rnadom tree model has the highest R^2 of all other models I created.
+- While a test R^2 score of .6 is not remotely impressive, this data set has a lot of very noticable quirks
+- There is still plenty of room for improvement, and many other models to test.
+
   
 ## Next Steps
 - While I have cleaned and optimized a model far beyond default hyperparameters there is still much that can be done.

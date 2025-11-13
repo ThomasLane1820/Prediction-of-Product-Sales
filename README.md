@@ -101,5 +101,5 @@ Author: Thomas Lane
 - While I have cleaned and optimized a model far beyond default hyperparameters there is still much that can be done.
   - There are more advanced models I can use to predict sales with.
   - Additional analysis.
-  - Making adjustments to make the notebook more readable, adding additonal explanations.
-  - Attempting to address the missing Outlet_Location_Type values.
+  - Making adjustments to make the notebook more readable, adding more explanations.
+  - Attempting to address the missing Outlet_Size values.

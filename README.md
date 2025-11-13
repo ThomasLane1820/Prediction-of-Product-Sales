@@ -53,7 +53,7 @@ Author: Thomas Lane
 
 ![Screenshot 2024-01-17 143557](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/ee0518a8-185d-44d4-8d3a-5cfd1ee8e2e9) 
 - Medium sized stores are performing the best.
-- Large stores aren't poerforming that much better than small stores, could be worht investing in more medium sized outlets rather than larger outlets.
+- Large stores aren't poerforming that much better than small stores, could be worth investing in more medium sized outlets rather than larger outlets.
 - While there is a significant amount of missing outlet sizes, they are performing as well as small stores on average.
 
 

@@ -55,12 +55,14 @@ Author: Thomas Lane
 - Medium sized stores are performing the best.
 - Large stores aren't poerforming that much better than small stores, could be worth investing in more medium sized outlets rather than larger outlets.
 - While there is a significant amount of missing outlet sizes, they are performing as well as small stores on average.
+<img width="589" height="390" alt="Outlet_Size Vs Sales" src="https://github.com/user-attachments/assets/c0cd94c2-15f8-4468-aa0c-1ad8f9f05089" />
 
 
 ![Screenshot 2024-01-17 143923](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/04905331-1b73-43e8-a645-87bcce60fc5c)
 - The higher the visibility of an item the lower the sales on average.
 - This finding is very counter intuitive.
   - Could be a quirk with the data as there is a hard wall just before the .2 visibility where sales take a steep dive.
+
 
 
 
@@ -102,4 +104,3 @@ Author: Thomas Lane
   - There are more advanced models I can use to predict sales with.
   - Additional analysis.
   - Making adjustments to make the notebook more readable, adding more explanations.
-  - Attempting to address the missing Outlet_Size values.

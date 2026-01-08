@@ -53,10 +53,9 @@ Author: Thomas Lane
 
  <img width="589" height="390" alt="Outlet_Size Vs Sales" src="https://github.com/user-attachments/assets/c0cd94c2-15f8-4468-aa0c-1ad8f9f05089" />
  
-- Medium sized stores are performing the best.
-- Large stores aren't poerforming that much better than small stores, could be worth investing in more medium sized outlets rather than larger outlets.
-- While there is a significant amount of missing outlet sizes, they are performing as well as small stores on average.
-
+- Medium stores on average perform the best of the three stores, as well as having the best performing individual stores.
+- Small stores understandably have lower total sales than the other store sizes, but surprisingly small stores have some very well performing outliers.
+- I would say that large stores are underperforming. Having been given the most square footage and product, I would assume they would be moving the most product as well.
 
 
 ![Screenshot 2024-01-17 143923](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/04905331-1b73-43e8-a645-87bcce60fc5c)

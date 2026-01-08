@@ -51,7 +51,7 @@ Author: Thomas Lane
 - While total sales steadilty increase as the price of the item increases there doesn't appear to be a clear sweetspot for item cost.
 - Not much to take away from this plot unfortunately. 
 
-![Screenshot 2024-01-17 143557](https://github.com/ThomasLane1820/Prediction-of-Product-Sales/assets/139289105/ee0518a8-185d-44d4-8d3a-5cfd1ee8e2e9) 
+ <img width="589" height="390" alt="Outlet_Size Vs Sales" src="https://github.com/user-attachments/assets/c0cd94c2-15f8-4468-aa0c-1ad8f9f05089" />
 - Medium sized stores are performing the best.
 - Large stores aren't poerforming that much better than small stores, could be worth investing in more medium sized outlets rather than larger outlets.
 - While there is a significant amount of missing outlet sizes, they are performing as well as small stores on average.
